@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Infra used by the checks. SQLite + in-memory cache/lock keep the sample green with no external
 // services — swap in Npgsql / GM.Caching.Redis / GM.DistributedLock.Redis for the real thing.
 builder.Services.AddDbContext<SampleDbContext>(o =>
-    o.UseSqlite(builder.Configuration.GetConnectionString("Database") ?? "Data Source=healthchecks-sample.db"));
+    o.UseSqlite(builder.Configuration.GetConnectionString("Database") ?? "Data Source=healthchecks-sample.db").UseSnakeCaseNamingConvention());
 builder.Services.AddGMCaching();
 builder.Services.AddGMDistributedLock();
 
