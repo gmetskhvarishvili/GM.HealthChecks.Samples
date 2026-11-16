@@ -7,10 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="GM.HealthChecks" Version="1.0.3" />
-        <PackageReference Include="GM.HealthChecks.EntityFramework" Version="1.0.3" />
-        <PackageReference Include="GM.HealthChecks.Caching" Version="1.0.3" />
-        <PackageReference Include="GM.HealthChecks.DistributedLock" Version="1.0.3" />
+        <PackageReference Include="GM.HealthChecks" Version="1.1.0" />
+        <PackageReference Include="GM.HealthChecks.EntityFramework" Version="1.1.0" />
+        <PackageReference Include="GM.HealthChecks.Caching" Version="1.1.0" />
+        <PackageReference Include="GM.HealthChecks.DistributedLock" Version="1.1.0" />
         <PackageReference Include="GM.Caching" Version="1.2.0" />
         <PackageReference Include="GM.DistributedLock" Version="1.2.0" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.11" />
